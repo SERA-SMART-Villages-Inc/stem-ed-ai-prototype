@@ -32,7 +32,11 @@ export function AssessmentTrendChart({ assessments }: AssessmentTrendChartProps)
   });
 
   return (
-    <div className="h-64 w-full">
+    <div
+      className="h-64 w-full"
+      role="img"
+      aria-label="Line chart of assessment percentile over time by subject. The same data is presented as a table below this chart."
+    >
       <ResponsiveContainer width="100%" height="100%">
         <LineChart data={data} margin={{ top: 8, right: 16, bottom: 0, left: -16 }}>
           <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />

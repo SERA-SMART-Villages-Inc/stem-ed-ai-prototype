@@ -1,6 +1,7 @@
 import { requireRoleSession } from "@/lib/auth/session";
 import { resolveAdapter } from "@/lib/services/adapters";
 import { AssessmentTrendChart } from "@/components/dashboard/AssessmentTrendChart";
+import { AssessmentDataTable } from "@/components/dashboard/AssessmentDataTable";
 import { InterventionStatusBadge } from "@/components/dashboard/badges";
 import type { InterventionType } from "@/types/schemas";
 
@@ -28,8 +29,6 @@ export default async function StudentDashboardPage({
     adapter.getInterventionsByStudent(profile.id),
   ]);
 
-  const sortedAssessments = [...assessments].sort((a, b) => (a.administered_at < b.administered_at ? -1 : 1));
-
   return (
     <div className="space-y-8">
       <div>
@@ -42,6 +41,7 @@ export default async function StudentDashboardPage({
         <div className="rounded-lg border border-border p-4">
           <AssessmentTrendChart assessments={assessments} />
         </div>
+        <AssessmentDataTable assessments={assessments} />
       </section>
 
       <section className="space-y-3">
@@ -63,25 +63,6 @@ export default async function StudentDashboardPage({
             ))}
           </ul>
         )}
-      </section>
-
-      <section className="space-y-3">
-        <h2 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">Recent scores</h2>
-        <ul className="space-y-2">
-          {sortedAssessments.map((a) => (
-            <li
-              key={a.id}
-              className="flex items-center justify-between rounded-lg border border-border px-4 py-2 text-sm"
-            >
-              <span>
-                {a.assessment_name} · {a.administered_at}
-              </span>
-              <span className="font-medium">
-                {a.percentile !== null ? `${a.percentile}th percentile` : "—"}
-              </span>
-            </li>
-          ))}
-        </ul>
       </section>
     </div>
   );

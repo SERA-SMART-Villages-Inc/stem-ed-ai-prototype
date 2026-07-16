@@ -2,6 +2,7 @@ import { requireRoleSession } from "@/lib/auth/session";
 import { resolveAdapter } from "@/lib/services/adapters";
 import { ProficiencyBadge, InterventionStatusBadge, FlagBadge } from "@/components/dashboard/badges";
 import { StatCard } from "@/components/dashboard/StatCard";
+import { InterventionProvenance } from "@/components/dashboard/InterventionProvenance";
 
 export default async function TeacherDashboardPage({
   searchParams,
@@ -85,12 +86,15 @@ export default async function TeacherDashboardPage({
                   )}
                 </td>
                 <td className="px-4 py-3">
-                  <div className="space-y-1">
+                  <div className="space-y-2">
                     {activeInterventions.length === 0 && <span className="text-xs text-muted-foreground">None</span>}
                     {activeInterventions.map((iv) => (
-                      <div key={iv.id} className="flex items-center gap-1.5">
-                        <InterventionStatusBadge status={iv.status} />
-                        <span className="text-xs capitalize">{iv.type.replace(/_/g, " ")}</span>
+                      <div key={iv.id} className="space-y-1">
+                        <div className="flex items-center gap-1.5">
+                          <InterventionStatusBadge status={iv.status} />
+                          <span className="text-xs capitalize">{iv.type.replace(/_/g, " ")}</span>
+                        </div>
+                        <InterventionProvenance intervention={iv} />
                       </div>
                     ))}
                   </div>
