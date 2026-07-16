@@ -22,10 +22,17 @@ dotenv.config({ path: path.resolve(process.cwd(), ".env.local") });
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-const TEST_PASSWORD = process.env.SEED_TEST_PASSWORD ?? "Riverbend-Test-2026!";
+const TEST_PASSWORD = process.env.SEED_TEST_PASSWORD;
 
 if (!SUPABASE_URL || !ANON_KEY) {
   console.error("Missing NEXT_PUBLIC_SUPABASE_URL or NEXT_PUBLIC_SUPABASE_ANON_KEY in .env.local. Aborting.");
+  process.exit(1);
+}
+if (!TEST_PASSWORD) {
+  console.error(
+    "Missing SEED_TEST_PASSWORD env var. Set it to the same value you used for `npm run seed` — " +
+      "there is no built-in default, since this repo is public."
+  );
   process.exit(1);
 }
 
@@ -33,7 +40,7 @@ async function signInAs(email: string): Promise<SupabaseClient> {
   const client = createClient(SUPABASE_URL as string, ANON_KEY as string, {
     auth: { autoRefreshToken: false, persistSession: false },
   });
-  const { data, error } = await client.auth.signInWithPassword({ email, password: TEST_PASSWORD });
+  const { data, error } = await client.auth.signInWithPassword({ email, password: TEST_PASSWORD as string });
   if (error || !data.session) {
     throw new Error(
       `Failed to sign in as ${email}: ${error?.message ?? "no session"}. ` +

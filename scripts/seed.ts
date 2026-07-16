@@ -27,10 +27,18 @@ dotenv.config({ path: path.resolve(process.cwd(), ".env.local") });
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
-const TEST_PASSWORD = process.env.SEED_TEST_PASSWORD ?? "Riverbend-Test-2026!";
+const TEST_PASSWORD = process.env.SEED_TEST_PASSWORD;
 
 if (!SUPABASE_URL || !SERVICE_ROLE_KEY) {
   console.error("Missing NEXT_PUBLIC_SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY in .env.local. Aborting.");
+  process.exit(1);
+}
+if (!TEST_PASSWORD) {
+  console.error(
+    "Missing SEED_TEST_PASSWORD env var. Set your own value (e.g. in .env.local, or inline: " +
+      "SEED_TEST_PASSWORD=... npm run seed) before running this script — there is no built-in " +
+      "default, since this repo is public."
+  );
   process.exit(1);
 }
 
@@ -358,8 +366,7 @@ async function main() {
   console.log(`Interventions seeded (${interventionsInserted} new, ${INTERVENTIONS.length - interventionsInserted} already present).`);
 
   console.log("\n== Done ==");
-  console.log(`Shared test password for all accounts: ${TEST_PASSWORD}`);
-  console.log("(Synthetic/throwaway — this is not real user data. Override with SEED_TEST_PASSWORD if you want a different one.)\n");
+  console.log("All accounts share the password you set in SEED_TEST_PASSWORD (not printed here).");
   console.log("Test accounts:");
   for (const person of PEOPLE) {
     console.log(`  ${person.role.padEnd(15)} ${person.email}`);
