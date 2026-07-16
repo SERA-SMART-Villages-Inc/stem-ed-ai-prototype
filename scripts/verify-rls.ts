@@ -82,7 +82,8 @@ async function main() {
     `district_admin SELECT on schools returned ${schools?.length ?? 0} row(s): ${(schools ?? []).map((s) => s.name).join(", ")}`
   );
 
-  const { data: allStudentsAsDana } = await dana.from("students").select("id, school_id");
+  const { data: allStudentsAsDana, error: allStudentsAsDanaError } = await dana.from("students").select("id, school_id");
+  if (allStudentsAsDanaError) throw allStudentsAsDanaError;
   const danaElemCount = (allStudentsAsDana ?? []).filter((s) => s.school_id === elementary.id).length;
   const danaMidCount = (allStudentsAsDana ?? []).filter((s) => s.school_id === middle.id).length;
   record(
@@ -174,7 +175,8 @@ async function main() {
 
   // 6. School leader boundary: Monica (Elementary leader) should never see Middle school students.
   const monica = await signInAs("monica.reyes@riverbend.test");
-  const { data: monicaAll } = await monica.from("students").select("id, school_id");
+  const { data: monicaAll, error: monicaAllError } = await monica.from("students").select("id, school_id");
+  if (monicaAllError) throw monicaAllError;
   const monicaSeesOtherSchool = (monicaAll ?? []).some((s) => s.school_id === middle.id);
   record(
     "School leader's unfiltered SELECT never includes the other school",
@@ -184,7 +186,8 @@ async function main() {
 
   // 7. Student: can only ever see their own row.
   const liam = await signInAs("liam.ortiz@riverbend.test");
-  const { data: liamAll } = await liam.from("students").select("id");
+  const { data: liamAll, error: liamAllError } = await liam.from("students").select("id");
+  if (liamAllError) throw liamAllError;
   record(
     "Student's unfiltered SELECT returns only their own row",
     (liamAll ?? []).length === 1,
