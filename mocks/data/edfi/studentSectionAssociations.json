@@ -1,0 +1,15 @@
+[
+  { "studentUniqueId": "p0000000-0000-4000-8000-000000000008", "sectionIdentifier": "sec-elem-math-23", "staffUniqueId": "p0000000-0000-4000-8000-000000000004", "schoolId": "s1111111-0000-4000-8000-000000000001", "subject": "math", "schoolYear": "2025-2026" },
+  { "studentUniqueId": "p0000000-0000-4000-8000-000000000009", "sectionIdentifier": "sec-elem-math-23", "staffUniqueId": "p0000000-0000-4000-8000-000000000004", "schoolId": "s1111111-0000-4000-8000-000000000001", "subject": "math", "schoolYear": "2025-2026" },
+  { "studentUniqueId": "p0000000-0000-4000-8000-000000000010", "sectionIdentifier": "sec-elem-sci-k1", "staffUniqueId": "p0000000-0000-4000-8000-000000000005", "schoolId": "s1111111-0000-4000-8000-000000000001", "subject": "science", "schoolYear": "2025-2026" },
+  { "studentUniqueId": "p0000000-0000-4000-8000-000000000011", "sectionIdentifier": "sec-elem-ela-45", "staffUniqueId": "p0000000-0000-4000-8000-000000000004", "schoolId": "s1111111-0000-4000-8000-000000000001", "subject": "ela", "schoolYear": "2025-2026" },
+  { "studentUniqueId": "p0000000-0000-4000-8000-000000000012", "sectionIdentifier": "sec-elem-ela-45", "staffUniqueId": "p0000000-0000-4000-8000-000000000004", "schoolId": "s1111111-0000-4000-8000-000000000001", "subject": "ela", "schoolYear": "2025-2026" },
+  { "studentUniqueId": "p0000000-0000-4000-8000-000000000013", "sectionIdentifier": "sec-elem-sci-k1", "staffUniqueId": "p0000000-0000-4000-8000-000000000005", "schoolId": "s1111111-0000-4000-8000-000000000001", "subject": "science", "schoolYear": "2025-2026" },
+
+  { "studentUniqueId": "p0000000-0000-4000-8000-000000000014", "sectionIdentifier": "sec-mid-math-67", "staffUniqueId": "p0000000-0000-4000-8000-000000000006", "schoolId": "s1111111-0000-4000-8000-000000000002", "subject": "math", "schoolYear": "2025-2026" },
+  { "studentUniqueId": "p0000000-0000-4000-8000-000000000015", "sectionIdentifier": "sec-mid-math-67", "staffUniqueId": "p0000000-0000-4000-8000-000000000006", "schoolId": "s1111111-0000-4000-8000-000000000002", "subject": "math", "schoolYear": "2025-2026" },
+  { "studentUniqueId": "p0000000-0000-4000-8000-000000000016", "sectionIdentifier": "sec-mid-ela-8", "staffUniqueId": "p0000000-0000-4000-8000-000000000007", "schoolId": "s1111111-0000-4000-8000-000000000002", "subject": "ela", "schoolYear": "2025-2026" },
+  { "studentUniqueId": "p0000000-0000-4000-8000-000000000017", "sectionIdentifier": "sec-mid-ela-8", "staffUniqueId": "p0000000-0000-4000-8000-000000000007", "schoolId": "s1111111-0000-4000-8000-000000000002", "subject": "ela", "schoolYear": "2025-2026" },
+  { "studentUniqueId": "p0000000-0000-4000-8000-000000000018", "sectionIdentifier": "sec-mid-math-67", "staffUniqueId": "p0000000-0000-4000-8000-000000000006", "schoolId": "s1111111-0000-4000-8000-000000000002", "subject": "math", "schoolYear": "2025-2026" },
+  { "studentUniqueId": "p0000000-0000-4000-8000-000000000019", "sectionIdentifier": "sec-mid-ela-8", "staffUniqueId": "p0000000-0000-4000-8000-000000000007", "schoolId": "s1111111-0000-4000-8000-000000000002", "subject": "ela", "schoolYear": "2025-2026" }
+]

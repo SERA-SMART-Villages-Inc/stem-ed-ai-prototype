@@ -1,0 +1,21 @@
+[
+  { "sourcedId": "e0000000-0000-4000-8000-000000000001", "classSourcedId": "c1111111-0000-4000-8000-000000000001", "userSourcedId": "p0000000-0000-4000-8000-000000000004", "role": "teacher", "primary": true },
+  { "sourcedId": "e0000000-0000-4000-8000-000000000002", "classSourcedId": "c1111111-0000-4000-8000-000000000002", "userSourcedId": "p0000000-0000-4000-8000-000000000004", "role": "teacher", "primary": true },
+  { "sourcedId": "e0000000-0000-4000-8000-000000000003", "classSourcedId": "c1111111-0000-4000-8000-000000000003", "userSourcedId": "p0000000-0000-4000-8000-000000000005", "role": "teacher", "primary": true },
+  { "sourcedId": "e0000000-0000-4000-8000-000000000004", "classSourcedId": "c1111111-0000-4000-8000-000000000004", "userSourcedId": "p0000000-0000-4000-8000-000000000006", "role": "teacher", "primary": true },
+  { "sourcedId": "e0000000-0000-4000-8000-000000000005", "classSourcedId": "c1111111-0000-4000-8000-000000000005", "userSourcedId": "p0000000-0000-4000-8000-000000000007", "role": "teacher", "primary": true },
+
+  { "sourcedId": "e0000000-0000-4000-8000-000000000010", "classSourcedId": "c1111111-0000-4000-8000-000000000001", "userSourcedId": "p0000000-0000-4000-8000-000000000008", "role": "student", "primary": true },
+  { "sourcedId": "e0000000-0000-4000-8000-000000000011", "classSourcedId": "c1111111-0000-4000-8000-000000000001", "userSourcedId": "p0000000-0000-4000-8000-000000000009", "role": "student", "primary": true },
+  { "sourcedId": "e0000000-0000-4000-8000-000000000012", "classSourcedId": "c1111111-0000-4000-8000-000000000003", "userSourcedId": "p0000000-0000-4000-8000-000000000010", "role": "student", "primary": true },
+  { "sourcedId": "e0000000-0000-4000-8000-000000000013", "classSourcedId": "c1111111-0000-4000-8000-000000000002", "userSourcedId": "p0000000-0000-4000-8000-000000000011", "role": "student", "primary": true },
+  { "sourcedId": "e0000000-0000-4000-8000-000000000014", "classSourcedId": "c1111111-0000-4000-8000-000000000002", "userSourcedId": "p0000000-0000-4000-8000-000000000012", "role": "student", "primary": true },
+  { "sourcedId": "e0000000-0000-4000-8000-000000000015", "classSourcedId": "c1111111-0000-4000-8000-000000000003", "userSourcedId": "p0000000-0000-4000-8000-000000000013", "role": "student", "primary": true },
+
+  { "sourcedId": "e0000000-0000-4000-8000-000000000020", "classSourcedId": "c1111111-0000-4000-8000-000000000004", "userSourcedId": "p0000000-0000-4000-8000-000000000014", "role": "student", "primary": true },
+  { "sourcedId": "e0000000-0000-4000-8000-000000000021", "classSourcedId": "c1111111-0000-4000-8000-000000000004", "userSourcedId": "p0000000-0000-4000-8000-000000000015", "role": "student", "primary": true },
+  { "sourcedId": "e0000000-0000-4000-8000-000000000022", "classSourcedId": "c1111111-0000-4000-8000-000000000005", "userSourcedId": "p0000000-0000-4000-8000-000000000016", "role": "student", "primary": true },
+  { "sourcedId": "e0000000-0000-4000-8000-000000000023", "classSourcedId": "c1111111-0000-4000-8000-000000000005", "userSourcedId": "p0000000-0000-4000-8000-000000000017", "role": "student", "primary": true },
+  { "sourcedId": "e0000000-0000-4000-8000-000000000024", "classSourcedId": "c1111111-0000-4000-8000-000000000004", "userSourcedId": "p0000000-0000-4000-8000-000000000018", "role": "student", "primary": true },
+  { "sourcedId": "e0000000-0000-4000-8000-000000000025", "classSourcedId": "c1111111-0000-4000-8000-000000000005", "userSourcedId": "p0000000-0000-4000-8000-000000000019", "role": "student", "primary": true }
+]

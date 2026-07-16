@@ -1,0 +1,29 @@
+[
+  { "sourcedId": "ar-0001", "studentSourcedId": "p0000000-0000-4000-8000-000000000008", "assessmentLineItemSourcedId": "ali-0000-0001", "scoreDate": "2025-09-15", "rawScore": 42, "scaleScore": 421, "scorePercentile": 55, "proficiencyBand": "Basic", "metadata": { "evidenceSource": "synthetic_mock" } },
+  { "sourcedId": "ar-0002", "studentSourcedId": "p0000000-0000-4000-8000-000000000008", "assessmentLineItemSourcedId": "ali-0000-0001", "scoreDate": "2026-01-20", "rawScore": 48, "scaleScore": 438, "scorePercentile": 61, "proficiencyBand": "Proficient", "metadata": { "evidenceSource": "synthetic_mock" } },
+
+  { "sourcedId": "ar-0003", "studentSourcedId": "p0000000-0000-4000-8000-000000000009", "assessmentLineItemSourcedId": "ali-0000-0001", "scoreDate": "2025-09-15", "rawScore": 25, "scaleScore": 388, "scorePercentile": 18, "proficiencyBand": "Below Basic", "metadata": { "evidenceSource": "synthetic_mock" } },
+  { "sourcedId": "ar-0004", "studentSourcedId": "p0000000-0000-4000-8000-000000000009", "assessmentLineItemSourcedId": "ali-0000-0001", "scoreDate": "2026-01-20", "rawScore": 29, "scaleScore": 397, "scorePercentile": 22, "proficiencyBand": "Below Basic", "metadata": { "evidenceSource": "synthetic_mock" } },
+
+  { "sourcedId": "ar-0005", "studentSourcedId": "p0000000-0000-4000-8000-000000000010", "assessmentLineItemSourcedId": "ali-0000-0003", "scoreDate": "2025-09-18", "rawScore": 30, "scaleScore": 175, "scorePercentile": 40, "proficiencyBand": "Basic", "metadata": { "evidenceSource": "synthetic_mock" } },
+
+  { "sourcedId": "ar-0006", "studentSourcedId": "p0000000-0000-4000-8000-000000000011", "assessmentLineItemSourcedId": "ali-0000-0002", "scoreDate": "2025-09-18", "rawScore": 36, "scaleScore": 512, "scorePercentile": 63, "proficiencyBand": "Proficient", "metadata": { "evidenceSource": "synthetic_mock" } },
+
+  { "sourcedId": "ar-0007", "studentSourcedId": "p0000000-0000-4000-8000-000000000012", "assessmentLineItemSourcedId": "ali-0000-0002", "scoreDate": "2025-09-18", "rawScore": 44, "scaleScore": 601, "scorePercentile": 91, "proficiencyBand": "Advanced", "metadata": { "evidenceSource": "synthetic_mock" } },
+  { "sourcedId": "ar-0008", "studentSourcedId": "p0000000-0000-4000-8000-000000000012", "assessmentLineItemSourcedId": "ali-0000-0002", "scoreDate": "2026-01-22", "rawScore": 46, "scaleScore": 614, "scorePercentile": 94, "proficiencyBand": "Advanced", "metadata": { "evidenceSource": "synthetic_mock" } },
+
+  { "sourcedId": "ar-0009", "studentSourcedId": "p0000000-0000-4000-8000-000000000013", "assessmentLineItemSourcedId": "ali-0000-0003", "scoreDate": "2025-09-18", "rawScore": 18, "scaleScore": 142, "scorePercentile": 35, "proficiencyBand": "Basic", "metadata": { "evidenceSource": "synthetic_mock" } },
+
+  { "sourcedId": "ar-0010", "studentSourcedId": "p0000000-0000-4000-8000-000000000014", "assessmentLineItemSourcedId": "ali-0000-0004", "scoreDate": "2025-09-20", "rawScore": 38, "scaleScore": 655, "scorePercentile": 58, "proficiencyBand": "Proficient", "metadata": { "evidenceSource": "synthetic_mock" } },
+
+  { "sourcedId": "ar-0011", "studentSourcedId": "p0000000-0000-4000-8000-000000000015", "assessmentLineItemSourcedId": "ali-0000-0004", "scoreDate": "2025-09-20", "rawScore": 20, "scaleScore": 590, "scorePercentile": 15, "proficiencyBand": "Below Basic", "metadata": { "evidenceSource": "synthetic_mock" } },
+  { "sourcedId": "ar-0012", "studentSourcedId": "p0000000-0000-4000-8000-000000000015", "assessmentLineItemSourcedId": "ali-0000-0004", "scoreDate": "2026-01-25", "rawScore": 24, "scaleScore": 602, "scorePercentile": 19, "proficiencyBand": "Below Basic", "metadata": { "evidenceSource": "synthetic_mock" } },
+
+  { "sourcedId": "ar-0013", "studentSourcedId": "p0000000-0000-4000-8000-000000000016", "assessmentLineItemSourcedId": "ali-0000-0005", "scoreDate": "2025-09-20", "rawScore": 33, "scaleScore": 700, "scorePercentile": 70, "proficiencyBand": "Proficient", "metadata": { "evidenceSource": "synthetic_mock" } },
+
+  { "sourcedId": "ar-0014", "studentSourcedId": "p0000000-0000-4000-8000-000000000017", "assessmentLineItemSourcedId": "ali-0000-0005", "scoreDate": "2025-09-20", "rawScore": 27, "scaleScore": 640, "scorePercentile": 48, "proficiencyBand": "Basic", "metadata": { "evidenceSource": "synthetic_mock" } },
+
+  { "sourcedId": "ar-0015", "studentSourcedId": "p0000000-0000-4000-8000-000000000018", "assessmentLineItemSourcedId": "ali-0000-0004", "scoreDate": "2025-09-20", "rawScore": 22, "scaleScore": 598, "scorePercentile": 17, "proficiencyBand": "Below Basic", "metadata": { "evidenceSource": "synthetic_mock" } },
+
+  { "sourcedId": "ar-0016", "studentSourcedId": "p0000000-0000-4000-8000-000000000019", "assessmentLineItemSourcedId": "ali-0000-0005", "scoreDate": "2025-09-20", "rawScore": 35, "scaleScore": 712, "scorePercentile": 75, "proficiencyBand": "Proficient", "metadata": { "evidenceSource": "synthetic_mock" } }
+]

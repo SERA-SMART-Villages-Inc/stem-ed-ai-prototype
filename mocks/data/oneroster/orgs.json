@@ -1,0 +1,25 @@
+[
+  {
+    "sourcedId": "d1111111-0000-4000-8000-000000000001",
+    "name": "Riverbend Unified School District",
+    "type": "district",
+    "identifier": "0600001",
+    "parentSourcedId": null
+  },
+  {
+    "sourcedId": "s1111111-0000-4000-8000-000000000001",
+    "name": "Riverbend Elementary School",
+    "type": "school",
+    "identifier": "060000101",
+    "parentSourcedId": "d1111111-0000-4000-8000-000000000001",
+    "metadata": { "gradeBand": "K-5" }
+  },
+  {
+    "sourcedId": "s1111111-0000-4000-8000-000000000002",
+    "name": "Riverbend Middle School",
+    "type": "school",
+    "identifier": "060000102",
+    "parentSourcedId": "d1111111-0000-4000-8000-000000000001",
+    "metadata": { "gradeBand": "6-8" }
+  }
+]

@@ -1,0 +1,9 @@
+[
+  { "staffUniqueId": "p0000000-0000-4000-8000-000000000001", "firstName": "Dana", "lastSurname": "Whitfield", "staffClassificationDescriptor": "District Administrator", "educationOrganizationId": "d1111111-0000-4000-8000-000000000001" },
+  { "staffUniqueId": "p0000000-0000-4000-8000-000000000002", "firstName": "Monica", "lastSurname": "Reyes", "staffClassificationDescriptor": "Principal", "educationOrganizationId": "s1111111-0000-4000-8000-000000000001" },
+  { "staffUniqueId": "p0000000-0000-4000-8000-000000000003", "firstName": "Karl", "lastSurname": "Ibsen", "staffClassificationDescriptor": "Principal", "educationOrganizationId": "s1111111-0000-4000-8000-000000000002" },
+  { "staffUniqueId": "p0000000-0000-4000-8000-000000000004", "firstName": "Priya", "lastSurname": "Shah", "staffClassificationDescriptor": "Teacher", "educationOrganizationId": "s1111111-0000-4000-8000-000000000001", "_ext": { "subjectsTaught": ["math", "ela"] } },
+  { "staffUniqueId": "p0000000-0000-4000-8000-000000000005", "firstName": "Tom", "lastSurname": "Delgado", "staffClassificationDescriptor": "Teacher", "educationOrganizationId": "s1111111-0000-4000-8000-000000000001", "_ext": { "subjectsTaught": ["science"] } },
+  { "staffUniqueId": "p0000000-0000-4000-8000-000000000006", "firstName": "Aisha", "lastSurname": "Brown", "staffClassificationDescriptor": "Teacher", "educationOrganizationId": "s1111111-0000-4000-8000-000000000002", "_ext": { "subjectsTaught": ["math", "science"] } },
+  { "staffUniqueId": "p0000000-0000-4000-8000-000000000007", "firstName": "Evan", "lastSurname": "Ng", "staffClassificationDescriptor": "Teacher", "educationOrganizationId": "s1111111-0000-4000-8000-000000000002", "_ext": { "subjectsTaught": ["ela", "career_readiness"] } }
+]

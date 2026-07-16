@@ -1,0 +1,203 @@
+[
+  {
+    "sourcedId": "p0000000-0000-4000-8000-000000000001",
+    "enabledUser": true,
+    "orgSourcedIds": ["d1111111-0000-4000-8000-000000000001"],
+    "role": "administrator",
+    "givenName": "Dana",
+    "familyName": "Whitfield",
+    "identifier": "staff-0001"
+  },
+  {
+    "sourcedId": "p0000000-0000-4000-8000-000000000002",
+    "enabledUser": true,
+    "orgSourcedIds": ["s1111111-0000-4000-8000-000000000001"],
+    "role": "administrator",
+    "givenName": "Monica",
+    "familyName": "Reyes",
+    "identifier": "staff-0002",
+    "metadata": { "title": "Principal" }
+  },
+  {
+    "sourcedId": "p0000000-0000-4000-8000-000000000003",
+    "enabledUser": true,
+    "orgSourcedIds": ["s1111111-0000-4000-8000-000000000002"],
+    "role": "administrator",
+    "givenName": "Karl",
+    "familyName": "Ibsen",
+    "identifier": "staff-0003",
+    "metadata": { "title": "Principal" }
+  },
+  {
+    "sourcedId": "p0000000-0000-4000-8000-000000000004",
+    "enabledUser": true,
+    "orgSourcedIds": ["s1111111-0000-4000-8000-000000000001"],
+    "role": "teacher",
+    "givenName": "Priya",
+    "familyName": "Shah",
+    "identifier": "staff-0004",
+    "metadata": { "subjectsTaught": ["math", "ela"] }
+  },
+  {
+    "sourcedId": "p0000000-0000-4000-8000-000000000005",
+    "enabledUser": true,
+    "orgSourcedIds": ["s1111111-0000-4000-8000-000000000001"],
+    "role": "teacher",
+    "givenName": "Tom",
+    "familyName": "Delgado",
+    "identifier": "staff-0005",
+    "metadata": { "subjectsTaught": ["science"] }
+  },
+  {
+    "sourcedId": "p0000000-0000-4000-8000-000000000006",
+    "enabledUser": true,
+    "orgSourcedIds": ["s1111111-0000-4000-8000-000000000002"],
+    "role": "teacher",
+    "givenName": "Aisha",
+    "familyName": "Brown",
+    "identifier": "staff-0006",
+    "metadata": { "subjectsTaught": ["math", "science"] }
+  },
+  {
+    "sourcedId": "p0000000-0000-4000-8000-000000000007",
+    "enabledUser": true,
+    "orgSourcedIds": ["s1111111-0000-4000-8000-000000000002"],
+    "role": "teacher",
+    "givenName": "Evan",
+    "familyName": "Ng",
+    "identifier": "staff-0007",
+    "metadata": { "subjectsTaught": ["ela", "career_readiness"] }
+  },
+  {
+    "sourcedId": "p0000000-0000-4000-8000-000000000008",
+    "enabledUser": true,
+    "orgSourcedIds": ["s1111111-0000-4000-8000-000000000001"],
+    "role": "student",
+    "givenName": "Maya",
+    "familyName": "Chen",
+    "identifier": "sis-1008",
+    "grades": ["02"],
+    "metadata": { "has_iep": false, "has_504": false }
+  },
+  {
+    "sourcedId": "p0000000-0000-4000-8000-000000000009",
+    "enabledUser": true,
+    "orgSourcedIds": ["s1111111-0000-4000-8000-000000000001"],
+    "role": "student",
+    "givenName": "Liam",
+    "familyName": "Ortiz",
+    "identifier": "sis-1009",
+    "grades": ["03"],
+    "metadata": { "has_iep": true, "has_504": false }
+  },
+  {
+    "sourcedId": "p0000000-0000-4000-8000-000000000010",
+    "enabledUser": true,
+    "orgSourcedIds": ["s1111111-0000-4000-8000-000000000001"],
+    "role": "student",
+    "givenName": "Sofia",
+    "familyName": "Petrov",
+    "identifier": "sis-1010",
+    "grades": ["01"],
+    "metadata": { "has_iep": false, "has_504": false }
+  },
+  {
+    "sourcedId": "p0000000-0000-4000-8000-000000000011",
+    "enabledUser": true,
+    "orgSourcedIds": ["s1111111-0000-4000-8000-000000000001"],
+    "role": "student",
+    "givenName": "Noah",
+    "familyName": "Kim",
+    "identifier": "sis-1011",
+    "grades": ["04"],
+    "metadata": { "has_iep": false, "has_504": false }
+  },
+  {
+    "sourcedId": "p0000000-0000-4000-8000-000000000012",
+    "enabledUser": true,
+    "orgSourcedIds": ["s1111111-0000-4000-8000-000000000001"],
+    "role": "student",
+    "givenName": "Ava",
+    "familyName": "Thompson",
+    "identifier": "sis-1012",
+    "grades": ["05"],
+    "metadata": { "has_iep": false, "has_504": true }
+  },
+  {
+    "sourcedId": "p0000000-0000-4000-8000-000000000013",
+    "enabledUser": true,
+    "orgSourcedIds": ["s1111111-0000-4000-8000-000000000001"],
+    "role": "student",
+    "givenName": "Ethan",
+    "familyName": "Brooks",
+    "identifier": "sis-1013",
+    "grades": ["KG"],
+    "metadata": { "has_iep": false, "has_504": false }
+  },
+  {
+    "sourcedId": "p0000000-0000-4000-8000-000000000014",
+    "enabledUser": true,
+    "orgSourcedIds": ["s1111111-0000-4000-8000-000000000002"],
+    "role": "student",
+    "givenName": "Zoe",
+    "familyName": "Martinez",
+    "identifier": "sis-1014",
+    "grades": ["06"],
+    "metadata": { "has_iep": false, "has_504": false }
+  },
+  {
+    "sourcedId": "p0000000-0000-4000-8000-000000000015",
+    "enabledUser": true,
+    "orgSourcedIds": ["s1111111-0000-4000-8000-000000000002"],
+    "role": "student",
+    "givenName": "Jaden",
+    "familyName": "Wright",
+    "identifier": "sis-1015",
+    "grades": ["07"],
+    "metadata": { "has_iep": true, "has_504": false }
+  },
+  {
+    "sourcedId": "p0000000-0000-4000-8000-000000000016",
+    "enabledUser": true,
+    "orgSourcedIds": ["s1111111-0000-4000-8000-000000000002"],
+    "role": "student",
+    "givenName": "Isabella",
+    "familyName": "Nguyen",
+    "identifier": "sis-1016",
+    "grades": ["08"],
+    "metadata": { "has_iep": false, "has_504": false }
+  },
+  {
+    "sourcedId": "p0000000-0000-4000-8000-000000000017",
+    "enabledUser": true,
+    "orgSourcedIds": ["s1111111-0000-4000-8000-000000000002"],
+    "role": "student",
+    "givenName": "Marcus",
+    "familyName": "Johnson",
+    "identifier": "sis-1017",
+    "grades": ["06"],
+    "metadata": { "has_iep": false, "has_504": false }
+  },
+  {
+    "sourcedId": "p0000000-0000-4000-8000-000000000018",
+    "enabledUser": true,
+    "orgSourcedIds": ["s1111111-0000-4000-8000-000000000002"],
+    "role": "student",
+    "givenName": "Chloe",
+    "familyName": "Davis",
+    "identifier": "sis-1018",
+    "grades": ["07"],
+    "metadata": { "has_iep": false, "has_504": true }
+  },
+  {
+    "sourcedId": "p0000000-0000-4000-8000-000000000019",
+    "enabledUser": true,
+    "orgSourcedIds": ["s1111111-0000-4000-8000-000000000002"],
+    "role": "student",
+    "givenName": "Ryan",
+    "familyName": "Patel",
+    "identifier": "sis-1019",
+    "grades": ["08"],
+    "metadata": { "has_iep": false, "has_504": false }
+  }
+]

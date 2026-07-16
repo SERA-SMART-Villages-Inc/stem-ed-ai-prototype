@@ -1,0 +1,81 @@
+[
+  {
+    "_comment": "Non-standard vendor extension — OneRoster core/assessments specs have no intervention entity.",
+    "sourcedId": "iv-0001",
+    "studentSourcedId": "p0000000-0000-4000-8000-000000000009",
+    "createdByUserSourcedId": "p0000000-0000-4000-8000-000000000004",
+    "type": "iep_accommodation",
+    "status": "active",
+    "subject": "math",
+    "rationale": "Two consecutive iReady Math diagnostics show percentile in the 18-22 range, below the school's Basic threshold. Recommending extended-time accommodation per current IEP.",
+    "startDate": "2025-10-01",
+    "endDate": null,
+    "aiConfidenceScore": 0.82,
+    "aiEvidenceRefs": ["ar-0003", "ar-0004"]
+  },
+  {
+    "sourcedId": "iv-0002",
+    "studentSourcedId": "p0000000-0000-4000-8000-000000000010",
+    "createdByUserSourcedId": "p0000000-0000-4000-8000-000000000005",
+    "type": "tutoring",
+    "status": "active",
+    "subject": "science",
+    "rationale": "Teacher-observed difficulty with lab vocabulary; paired with a peer tutor twice weekly starting this quarter.",
+    "startDate": "2025-11-03",
+    "endDate": null,
+    "aiConfidenceScore": null,
+    "aiEvidenceRefs": null
+  },
+  {
+    "sourcedId": "iv-0003",
+    "studentSourcedId": "p0000000-0000-4000-8000-000000000012",
+    "createdByUserSourcedId": "p0000000-0000-4000-8000-000000000004",
+    "type": "enrichment",
+    "status": "active",
+    "subject": "ela",
+    "rationale": "STAR Reading percentile rose from 91 to 94 across two administrations, placing the student in the Advanced band both times. Recommending enrichment novel study group.",
+    "startDate": "2026-02-01",
+    "endDate": null,
+    "aiConfidenceScore": 0.76,
+    "aiEvidenceRefs": ["ar-0007", "ar-0008"]
+  },
+  {
+    "sourcedId": "iv-0004",
+    "studentSourcedId": "p0000000-0000-4000-8000-000000000014",
+    "createdByUserSourcedId": "p0000000-0000-4000-8000-000000000006",
+    "type": "small_group",
+    "status": "proposed",
+    "subject": "math",
+    "rationale": "STAR Math percentile of 58 sits just above the Basic cutoff; proposing a small-group review block to reinforce fraction operations before the spring benchmark.",
+    "startDate": null,
+    "endDate": null,
+    "aiConfidenceScore": null,
+    "aiEvidenceRefs": null
+  },
+  {
+    "sourcedId": "iv-0005",
+    "studentSourcedId": "p0000000-0000-4000-8000-000000000018",
+    "createdByUserSourcedId": "p0000000-0000-4000-8000-000000000003",
+    "type": "504_accommodation",
+    "status": "active",
+    "subject": "math",
+    "rationale": "Existing 504 plan accommodations (extended time, reduced-distraction setting) reaffirmed after STAR Math percentile of 17 this term.",
+    "startDate": "2025-09-25",
+    "endDate": null,
+    "aiConfidenceScore": null,
+    "aiEvidenceRefs": null
+  },
+  {
+    "sourcedId": "iv-0006",
+    "studentSourcedId": "p0000000-0000-4000-8000-000000000017",
+    "createdByUserSourcedId": "p0000000-0000-4000-8000-000000000007",
+    "type": "behavioral_support",
+    "status": "completed",
+    "subject": null,
+    "rationale": "Completed six-week check-in/check-out behavioral support cycle following repeated classroom redirections observed by the teacher in September.",
+    "startDate": "2025-09-08",
+    "endDate": "2025-10-17",
+    "aiConfidenceScore": null,
+    "aiEvidenceRefs": null
+  }
+]

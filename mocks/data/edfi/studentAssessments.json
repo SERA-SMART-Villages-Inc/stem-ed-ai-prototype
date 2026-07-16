@@ -1,0 +1,29 @@
+[
+  { "studentAssessmentIdentifier": "sa-0001", "studentUniqueId": "p0000000-0000-4000-8000-000000000008", "assessmentTitle": "iReady Diagnostic", "subject": "math", "administrationDate": "2025-09-15", "rawScoreResult": 42, "scaleScoreResult": 421, "percentileScoreResult": 55, "performanceLevelDescriptor": "Basic", "dataSourceDescriptor": "synthetic_mock" },
+  { "studentAssessmentIdentifier": "sa-0002", "studentUniqueId": "p0000000-0000-4000-8000-000000000008", "assessmentTitle": "iReady Diagnostic", "subject": "math", "administrationDate": "2026-01-20", "rawScoreResult": 48, "scaleScoreResult": 438, "percentileScoreResult": 61, "performanceLevelDescriptor": "Proficient", "dataSourceDescriptor": "synthetic_mock" },
+
+  { "studentAssessmentIdentifier": "sa-0003", "studentUniqueId": "p0000000-0000-4000-8000-000000000009", "assessmentTitle": "iReady Diagnostic", "subject": "math", "administrationDate": "2025-09-15", "rawScoreResult": 25, "scaleScoreResult": 388, "percentileScoreResult": 18, "performanceLevelDescriptor": "Below Basic", "dataSourceDescriptor": "synthetic_mock" },
+  { "studentAssessmentIdentifier": "sa-0004", "studentUniqueId": "p0000000-0000-4000-8000-000000000009", "assessmentTitle": "iReady Diagnostic", "subject": "math", "administrationDate": "2026-01-20", "rawScoreResult": 29, "scaleScoreResult": 397, "percentileScoreResult": 22, "performanceLevelDescriptor": "Below Basic", "dataSourceDescriptor": "synthetic_mock" },
+
+  { "studentAssessmentIdentifier": "sa-0005", "studentUniqueId": "p0000000-0000-4000-8000-000000000010", "assessmentTitle": "NWEA MAP Growth", "subject": "science", "administrationDate": "2025-09-18", "rawScoreResult": 30, "scaleScoreResult": 175, "percentileScoreResult": 40, "performanceLevelDescriptor": "Basic", "dataSourceDescriptor": "synthetic_mock" },
+
+  { "studentAssessmentIdentifier": "sa-0006", "studentUniqueId": "p0000000-0000-4000-8000-000000000011", "assessmentTitle": "STAR Reading", "subject": "ela", "administrationDate": "2025-09-18", "rawScoreResult": 36, "scaleScoreResult": 512, "percentileScoreResult": 63, "performanceLevelDescriptor": "Proficient", "dataSourceDescriptor": "synthetic_mock" },
+
+  { "studentAssessmentIdentifier": "sa-0007", "studentUniqueId": "p0000000-0000-4000-8000-000000000012", "assessmentTitle": "STAR Reading", "subject": "ela", "administrationDate": "2025-09-18", "rawScoreResult": 44, "scaleScoreResult": 601, "percentileScoreResult": 91, "performanceLevelDescriptor": "Advanced", "dataSourceDescriptor": "synthetic_mock" },
+  { "studentAssessmentIdentifier": "sa-0008", "studentUniqueId": "p0000000-0000-4000-8000-000000000012", "assessmentTitle": "STAR Reading", "subject": "ela", "administrationDate": "2026-01-22", "rawScoreResult": 46, "scaleScoreResult": 614, "percentileScoreResult": 94, "performanceLevelDescriptor": "Advanced", "dataSourceDescriptor": "synthetic_mock" },
+
+  { "studentAssessmentIdentifier": "sa-0009", "studentUniqueId": "p0000000-0000-4000-8000-000000000013", "assessmentTitle": "NWEA MAP Growth", "subject": "science", "administrationDate": "2025-09-18", "rawScoreResult": 18, "scaleScoreResult": 142, "percentileScoreResult": 35, "performanceLevelDescriptor": "Basic", "dataSourceDescriptor": "synthetic_mock" },
+
+  { "studentAssessmentIdentifier": "sa-0010", "studentUniqueId": "p0000000-0000-4000-8000-000000000014", "assessmentTitle": "STAR Math", "subject": "math", "administrationDate": "2025-09-20", "rawScoreResult": 38, "scaleScoreResult": 655, "percentileScoreResult": 58, "performanceLevelDescriptor": "Proficient", "dataSourceDescriptor": "synthetic_mock" },
+
+  { "studentAssessmentIdentifier": "sa-0011", "studentUniqueId": "p0000000-0000-4000-8000-000000000015", "assessmentTitle": "STAR Math", "subject": "math", "administrationDate": "2025-09-20", "rawScoreResult": 20, "scaleScoreResult": 590, "percentileScoreResult": 15, "performanceLevelDescriptor": "Below Basic", "dataSourceDescriptor": "synthetic_mock" },
+  { "studentAssessmentIdentifier": "sa-0012", "studentUniqueId": "p0000000-0000-4000-8000-000000000015", "assessmentTitle": "STAR Math", "subject": "math", "administrationDate": "2026-01-25", "rawScoreResult": 24, "scaleScoreResult": 602, "percentileScoreResult": 19, "performanceLevelDescriptor": "Below Basic", "dataSourceDescriptor": "synthetic_mock" },
+
+  { "studentAssessmentIdentifier": "sa-0013", "studentUniqueId": "p0000000-0000-4000-8000-000000000016", "assessmentTitle": "Career Readiness Screener", "subject": "career_readiness", "administrationDate": "2025-09-20", "rawScoreResult": 33, "scaleScoreResult": 700, "percentileScoreResult": 70, "performanceLevelDescriptor": "Proficient", "dataSourceDescriptor": "synthetic_mock" },
+
+  { "studentAssessmentIdentifier": "sa-0014", "studentUniqueId": "p0000000-0000-4000-8000-000000000017", "assessmentTitle": "Career Readiness Screener", "subject": "career_readiness", "administrationDate": "2025-09-20", "rawScoreResult": 27, "scaleScoreResult": 640, "percentileScoreResult": 48, "performanceLevelDescriptor": "Basic", "dataSourceDescriptor": "synthetic_mock" },
+
+  { "studentAssessmentIdentifier": "sa-0015", "studentUniqueId": "p0000000-0000-4000-8000-000000000018", "assessmentTitle": "STAR Math", "subject": "math", "administrationDate": "2025-09-20", "rawScoreResult": 22, "scaleScoreResult": 598, "percentileScoreResult": 17, "performanceLevelDescriptor": "Below Basic", "dataSourceDescriptor": "synthetic_mock" },
+
+  { "studentAssessmentIdentifier": "sa-0016", "studentUniqueId": "p0000000-0000-4000-8000-000000000019", "assessmentTitle": "Career Readiness Screener", "subject": "career_readiness", "administrationDate": "2025-09-20", "rawScoreResult": 35, "scaleScoreResult": 712, "percentileScoreResult": 75, "performanceLevelDescriptor": "Proficient", "dataSourceDescriptor": "synthetic_mock" }
+]

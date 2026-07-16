@@ -1,0 +1,75 @@
+[
+  {
+    "_comment": "Ed-Fi Intervention domain, simplified. AI fields carried in an _ext namespace per Ed-Fi extension convention.",
+    "studentUniqueId": "p0000000-0000-4000-8000-000000000009",
+    "interventionIdentifier": "iv-0001",
+    "staffUniqueId": "p0000000-0000-4000-8000-000000000004",
+    "interventionTypeDescriptor": "iep_accommodation",
+    "statusDescriptor": "active",
+    "subject": "math",
+    "beginDate": "2025-10-01",
+    "endDate": null,
+    "interventionRationale": "Two consecutive iReady Math diagnostics show percentile in the 18-22 range, below the school's Basic threshold. Recommending extended-time accommodation per current IEP.",
+    "_ext": { "aiConfidenceScore": 0.82, "aiEvidenceRefs": ["sa-0003", "sa-0004"] }
+  },
+  {
+    "studentUniqueId": "p0000000-0000-4000-8000-000000000010",
+    "interventionIdentifier": "iv-0002",
+    "staffUniqueId": "p0000000-0000-4000-8000-000000000005",
+    "interventionTypeDescriptor": "tutoring",
+    "statusDescriptor": "active",
+    "subject": "science",
+    "beginDate": "2025-11-03",
+    "endDate": null,
+    "interventionRationale": "Teacher-observed difficulty with lab vocabulary; paired with a peer tutor twice weekly starting this quarter.",
+    "_ext": { "aiConfidenceScore": null, "aiEvidenceRefs": null }
+  },
+  {
+    "studentUniqueId": "p0000000-0000-4000-8000-000000000012",
+    "interventionIdentifier": "iv-0003",
+    "staffUniqueId": "p0000000-0000-4000-8000-000000000004",
+    "interventionTypeDescriptor": "enrichment",
+    "statusDescriptor": "active",
+    "subject": "ela",
+    "beginDate": "2026-02-01",
+    "endDate": null,
+    "interventionRationale": "STAR Reading percentile rose from 91 to 94 across two administrations, placing the student in the Advanced band both times. Recommending enrichment novel study group.",
+    "_ext": { "aiConfidenceScore": 0.76, "aiEvidenceRefs": ["sa-0007", "sa-0008"] }
+  },
+  {
+    "studentUniqueId": "p0000000-0000-4000-8000-000000000014",
+    "interventionIdentifier": "iv-0004",
+    "staffUniqueId": "p0000000-0000-4000-8000-000000000006",
+    "interventionTypeDescriptor": "small_group",
+    "statusDescriptor": "proposed",
+    "subject": "math",
+    "beginDate": null,
+    "endDate": null,
+    "interventionRationale": "STAR Math percentile of 58 sits just above the Basic cutoff; proposing a small-group review block to reinforce fraction operations before the spring benchmark.",
+    "_ext": { "aiConfidenceScore": null, "aiEvidenceRefs": null }
+  },
+  {
+    "studentUniqueId": "p0000000-0000-4000-8000-000000000018",
+    "interventionIdentifier": "iv-0005",
+    "staffUniqueId": "p0000000-0000-4000-8000-000000000003",
+    "interventionTypeDescriptor": "504_accommodation",
+    "statusDescriptor": "active",
+    "subject": "math",
+    "beginDate": "2025-09-25",
+    "endDate": null,
+    "interventionRationale": "Existing 504 plan accommodations (extended time, reduced-distraction setting) reaffirmed after STAR Math percentile of 17 this term.",
+    "_ext": { "aiConfidenceScore": null, "aiEvidenceRefs": null }
+  },
+  {
+    "studentUniqueId": "p0000000-0000-4000-8000-000000000017",
+    "interventionIdentifier": "iv-0006",
+    "staffUniqueId": "p0000000-0000-4000-8000-000000000007",
+    "interventionTypeDescriptor": "behavioral_support",
+    "statusDescriptor": "completed",
+    "subject": null,
+    "beginDate": "2025-09-08",
+    "endDate": "2025-10-17",
+    "interventionRationale": "Completed six-week check-in/check-out behavioral support cycle following repeated classroom redirections observed by the teacher in September.",
+    "_ext": { "aiConfidenceScore": null, "aiEvidenceRefs": null }
+  }
+]

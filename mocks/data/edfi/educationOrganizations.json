@@ -1,0 +1,23 @@
+[
+  {
+    "educationOrganizationId": "d1111111-0000-4000-8000-000000000001",
+    "organizationCategory": "LocalEducationAgency",
+    "nameOfInstitution": "Riverbend Unified School District",
+    "stateAbbreviationDescriptor": "CA",
+    "parentEducationOrganizationId": null
+  },
+  {
+    "educationOrganizationId": "s1111111-0000-4000-8000-000000000001",
+    "organizationCategory": "School",
+    "nameOfInstitution": "Riverbend Elementary School",
+    "gradeLevels": ["Kindergarten", "First grade", "Second grade", "Third grade", "Fourth grade", "Fifth grade"],
+    "parentEducationOrganizationId": "d1111111-0000-4000-8000-000000000001"
+  },
+  {
+    "educationOrganizationId": "s1111111-0000-4000-8000-000000000002",
+    "organizationCategory": "School",
+    "nameOfInstitution": "Riverbend Middle School",
+    "gradeLevels": ["Sixth grade", "Seventh grade", "Eighth grade"],
+    "parentEducationOrganizationId": "d1111111-0000-4000-8000-000000000001"
+  }
+]

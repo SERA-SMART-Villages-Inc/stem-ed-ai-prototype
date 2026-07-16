@@ -1,0 +1,7 @@
+[
+  { "sourcedId": "c1111111-0000-4000-8000-000000000001", "title": "Grade 2-3 Math", "subject": "math", "schoolSourcedId": "s1111111-0000-4000-8000-000000000001", "schoolYear": "2025-2026" },
+  { "sourcedId": "c1111111-0000-4000-8000-000000000002", "title": "Grade 4-5 ELA", "subject": "ela", "schoolSourcedId": "s1111111-0000-4000-8000-000000000001", "schoolYear": "2025-2026" },
+  { "sourcedId": "c1111111-0000-4000-8000-000000000003", "title": "K-1 Science", "subject": "science", "schoolSourcedId": "s1111111-0000-4000-8000-000000000001", "schoolYear": "2025-2026" },
+  { "sourcedId": "c1111111-0000-4000-8000-000000000004", "title": "Grade 6-7 Math", "subject": "math", "schoolSourcedId": "s1111111-0000-4000-8000-000000000002", "schoolYear": "2025-2026" },
+  { "sourcedId": "c1111111-0000-4000-8000-000000000005", "title": "Grade 8 ELA", "subject": "ela", "schoolSourcedId": "s1111111-0000-4000-8000-000000000002", "schoolYear": "2025-2026" }
+]

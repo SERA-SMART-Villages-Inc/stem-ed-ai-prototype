@@ -1,0 +1,14 @@
+[
+  { "studentUniqueId": "p0000000-0000-4000-8000-000000000008", "schoolId": "s1111111-0000-4000-8000-000000000001", "entryGradeLevelDescriptor": "Second grade", "entryDate": "2025-08-18", "studentIndicators": [] },
+  { "studentUniqueId": "p0000000-0000-4000-8000-000000000009", "schoolId": "s1111111-0000-4000-8000-000000000001", "entryGradeLevelDescriptor": "Third grade", "entryDate": "2025-08-18", "studentIndicators": [{ "indicatorName": "IDEA Indicator", "indicator": "Yes" }] },
+  { "studentUniqueId": "p0000000-0000-4000-8000-000000000010", "schoolId": "s1111111-0000-4000-8000-000000000001", "entryGradeLevelDescriptor": "First grade", "entryDate": "2025-08-18", "studentIndicators": [] },
+  { "studentUniqueId": "p0000000-0000-4000-8000-000000000011", "schoolId": "s1111111-0000-4000-8000-000000000001", "entryGradeLevelDescriptor": "Fourth grade", "entryDate": "2025-08-18", "studentIndicators": [] },
+  { "studentUniqueId": "p0000000-0000-4000-8000-000000000012", "schoolId": "s1111111-0000-4000-8000-000000000001", "entryGradeLevelDescriptor": "Fifth grade", "entryDate": "2025-08-18", "studentIndicators": [{ "indicatorName": "Section 504 Indicator", "indicator": "Yes" }] },
+  { "studentUniqueId": "p0000000-0000-4000-8000-000000000013", "schoolId": "s1111111-0000-4000-8000-000000000001", "entryGradeLevelDescriptor": "Kindergarten", "entryDate": "2025-08-18", "studentIndicators": [] },
+  { "studentUniqueId": "p0000000-0000-4000-8000-000000000014", "schoolId": "s1111111-0000-4000-8000-000000000002", "entryGradeLevelDescriptor": "Sixth grade", "entryDate": "2025-08-18", "studentIndicators": [] },
+  { "studentUniqueId": "p0000000-0000-4000-8000-000000000015", "schoolId": "s1111111-0000-4000-8000-000000000002", "entryGradeLevelDescriptor": "Seventh grade", "entryDate": "2025-08-18", "studentIndicators": [{ "indicatorName": "IDEA Indicator", "indicator": "Yes" }] },
+  { "studentUniqueId": "p0000000-0000-4000-8000-000000000016", "schoolId": "s1111111-0000-4000-8000-000000000002", "entryGradeLevelDescriptor": "Eighth grade", "entryDate": "2025-08-18", "studentIndicators": [] },
+  { "studentUniqueId": "p0000000-0000-4000-8000-000000000017", "schoolId": "s1111111-0000-4000-8000-000000000002", "entryGradeLevelDescriptor": "Sixth grade", "entryDate": "2025-08-18", "studentIndicators": [] },
+  { "studentUniqueId": "p0000000-0000-4000-8000-000000000018", "schoolId": "s1111111-0000-4000-8000-000000000002", "entryGradeLevelDescriptor": "Seventh grade", "entryDate": "2025-08-18", "studentIndicators": [{ "indicatorName": "Section 504 Indicator", "indicator": "Yes" }] },
+  { "studentUniqueId": "p0000000-0000-4000-8000-000000000019", "schoolId": "s1111111-0000-4000-8000-000000000002", "entryGradeLevelDescriptor": "Eighth grade", "entryDate": "2025-08-18", "studentIndicators": [] }
+]

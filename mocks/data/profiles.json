@@ -1,0 +1,136 @@
+[
+  {
+    "_comment": "Full mirror of the `profiles` RBAC anchor table (0001_init_schema.sql) for the synthetic Riverbend district. Not an SIS entity — used for full_name lookups in dashboard UI and by lib/auth/session.ts's dev-role fallback (see DEV_ROLE_PREVIEW_ID), independent of which mock SIS adapter (OneRoster/Ed-Fi) supplies roster/assessment data.",
+    "id": "p0000000-0000-4000-8000-000000000001",
+    "role": "district_admin",
+    "full_name": "Dana Whitfield",
+    "district_id": "d1111111-0000-4000-8000-000000000001",
+    "school_id": null
+  },
+  {
+    "id": "p0000000-0000-4000-8000-000000000002",
+    "role": "school_leader",
+    "full_name": "Monica Reyes",
+    "district_id": "d1111111-0000-4000-8000-000000000001",
+    "school_id": "s1111111-0000-4000-8000-000000000001"
+  },
+  {
+    "id": "p0000000-0000-4000-8000-000000000003",
+    "role": "school_leader",
+    "full_name": "Karl Ibsen",
+    "district_id": "d1111111-0000-4000-8000-000000000001",
+    "school_id": "s1111111-0000-4000-8000-000000000002"
+  },
+  {
+    "id": "p0000000-0000-4000-8000-000000000004",
+    "role": "teacher",
+    "full_name": "Priya Shah",
+    "district_id": "d1111111-0000-4000-8000-000000000001",
+    "school_id": "s1111111-0000-4000-8000-000000000001"
+  },
+  {
+    "id": "p0000000-0000-4000-8000-000000000005",
+    "role": "teacher",
+    "full_name": "Tom Delgado",
+    "district_id": "d1111111-0000-4000-8000-000000000001",
+    "school_id": "s1111111-0000-4000-8000-000000000001"
+  },
+  {
+    "id": "p0000000-0000-4000-8000-000000000006",
+    "role": "teacher",
+    "full_name": "Aisha Brown",
+    "district_id": "d1111111-0000-4000-8000-000000000001",
+    "school_id": "s1111111-0000-4000-8000-000000000002"
+  },
+  {
+    "id": "p0000000-0000-4000-8000-000000000007",
+    "role": "teacher",
+    "full_name": "Evan Ng",
+    "district_id": "d1111111-0000-4000-8000-000000000001",
+    "school_id": "s1111111-0000-4000-8000-000000000002"
+  },
+  {
+    "id": "p0000000-0000-4000-8000-000000000008",
+    "role": "student",
+    "full_name": "Maya Chen",
+    "district_id": "d1111111-0000-4000-8000-000000000001",
+    "school_id": "s1111111-0000-4000-8000-000000000001"
+  },
+  {
+    "id": "p0000000-0000-4000-8000-000000000009",
+    "role": "student",
+    "full_name": "Liam Ortiz",
+    "district_id": "d1111111-0000-4000-8000-000000000001",
+    "school_id": "s1111111-0000-4000-8000-000000000001"
+  },
+  {
+    "id": "p0000000-0000-4000-8000-000000000010",
+    "role": "student",
+    "full_name": "Sofia Petrov",
+    "district_id": "d1111111-0000-4000-8000-000000000001",
+    "school_id": "s1111111-0000-4000-8000-000000000001"
+  },
+  {
+    "id": "p0000000-0000-4000-8000-000000000011",
+    "role": "student",
+    "full_name": "Noah Kim",
+    "district_id": "d1111111-0000-4000-8000-000000000001",
+    "school_id": "s1111111-0000-4000-8000-000000000001"
+  },
+  {
+    "id": "p0000000-0000-4000-8000-000000000012",
+    "role": "student",
+    "full_name": "Ava Thompson",
+    "district_id": "d1111111-0000-4000-8000-000000000001",
+    "school_id": "s1111111-0000-4000-8000-000000000001"
+  },
+  {
+    "id": "p0000000-0000-4000-8000-000000000013",
+    "role": "student",
+    "full_name": "Ethan Brooks",
+    "district_id": "d1111111-0000-4000-8000-000000000001",
+    "school_id": "s1111111-0000-4000-8000-000000000001"
+  },
+  {
+    "id": "p0000000-0000-4000-8000-000000000014",
+    "role": "student",
+    "full_name": "Zoe Martinez",
+    "district_id": "d1111111-0000-4000-8000-000000000001",
+    "school_id": "s1111111-0000-4000-8000-000000000002"
+  },
+  {
+    "id": "p0000000-0000-4000-8000-000000000015",
+    "role": "student",
+    "full_name": "Jaden Wright",
+    "district_id": "d1111111-0000-4000-8000-000000000001",
+    "school_id": "s1111111-0000-4000-8000-000000000002"
+  },
+  {
+    "id": "p0000000-0000-4000-8000-000000000016",
+    "role": "student",
+    "full_name": "Isabella Nguyen",
+    "district_id": "d1111111-0000-4000-8000-000000000001",
+    "school_id": "s1111111-0000-4000-8000-000000000002"
+  },
+  {
+    "id": "p0000000-0000-4000-8000-000000000017",
+    "role": "student",
+    "full_name": "Marcus Johnson",
+    "district_id": "d1111111-0000-4000-8000-000000000001",
+    "school_id": "s1111111-0000-4000-8000-000000000002"
+  },
+  {
+    "id": "p0000000-0000-4000-8000-000000000018",
+    "role": "student",
+    "full_name": "Chloe Davis",
+    "district_id": "d1111111-0000-4000-8000-000000000001",
+    "school_id": "s1111111-0000-4000-8000-000000000002"
+  },
+  {
+    "id": "p0000000-0000-4000-8000-000000000019",
+    "role": "student",
+    "full_name": "Ryan Patel",
+    "district_id": "d1111111-0000-4000-8000-000000000001",
+    "school_id": "s1111111-0000-4000-8000-000000000002"
+  }
+]
