@@ -1,4 +1,5 @@
 import type { StudentDataAdapter } from "@/lib/services/StudentDataAdapter";
+import { lookupFullName } from "@/lib/services/profileDirectory";
 import type {
   District,
   School,
@@ -189,5 +190,9 @@ export class MockOneRosterAdapter implements StudentDataAdapter {
         created_at: `${iv.startDate ?? "2025-08-01"}T00:00:00.000Z`,
         updated_at: `${iv.startDate ?? "2025-08-01"}T00:00:00.000Z`,
       }));
+  }
+
+  async getFullName(profileId: string): Promise<string> {
+    return lookupFullName(profileId);
   }
 }

@@ -1,9 +1,8 @@
 import { redirect } from "next/navigation";
-import { requireRole } from "@/lib/auth/session";
-import { getAdapter, DEFAULT_DATA_SOURCE, type MockDataSource } from "@/lib/services/adapters";
+import { requireRoleSession } from "@/lib/auth/session";
+import { resolveAdapter } from "@/lib/services/adapters";
 import { StatCard } from "@/components/dashboard/StatCard";
 import { InterventionStatusBadge } from "@/components/dashboard/badges";
-import { lookupFullName } from "@/lib/services/profileDirectory";
 import type { InterventionStatus } from "@/types/schemas";
 
 function average(nums: number[]): number | null {
@@ -16,12 +15,12 @@ export default async function SchoolDashboardPage({
 }: {
   searchParams: { source?: string };
 }) {
-  const profile = await requireRole("school_leader");
+  const session = await requireRoleSession("school_leader");
+  const { profile } = session;
   const schoolId = profile.school_id;
   if (!schoolId) redirect("/login");
 
-  const source: MockDataSource = searchParams.source === "edfi" ? "edfi" : DEFAULT_DATA_SOURCE;
-  const adapter = getAdapter(source);
+  const adapter = await resolveAdapter(session, searchParams.source);
 
   const [school, teachers, students] = await Promise.all([
     adapter.getSchoolById(schoolId),
@@ -46,17 +45,22 @@ export default async function SchoolDashboardPage({
     { proposed: 0, active: 0, completed: 0, discontinued: 0 }
   );
 
-  const teacherRows = teachers.map((teacher) => ({
-    teacher,
-    studentCount: students.filter((s) => s.primary_teacher_id === teacher.id).length,
-  }));
+  const teacherRows = await Promise.all(
+    teachers.map(async (teacher) => ({
+      teacher,
+      fullName: await adapter.getFullName(teacher.id),
+      studentCount: students.filter((s) => s.primary_teacher_id === teacher.id).length,
+    }))
+  );
 
   return (
     <div className="space-y-8">
       <div>
         <h1 className="text-xl font-semibold">{school?.name ?? "School"} — Overview</h1>
         <p className="text-sm text-muted-foreground">
-          Synthetic data · roster source: {source === "edfi" ? "Ed-Fi" : "OneRoster"}
+          {session.source === "supabase"
+            ? "Live Supabase database (RLS-enforced)"
+            : `Synthetic mock data · roster source: ${searchParams.source === "edfi" ? "Ed-Fi" : "OneRoster"}`}
         </p>
       </div>
 
@@ -82,9 +86,9 @@ export default async function SchoolDashboardPage({
               </tr>
             </thead>
             <tbody>
-              {teacherRows.map(({ teacher, studentCount }) => (
+              {teacherRows.map(({ teacher, fullName, studentCount }) => (
                 <tr key={teacher.id} className="border-t border-border">
-                  <td className="px-4 py-3 font-medium">{lookupFullName(teacher.id)}</td>
+                  <td className="px-4 py-3 font-medium">{fullName}</td>
                   <td className="px-4 py-3 capitalize">{teacher.subjects_taught.join(", ").replace(/_/g, " ")}</td>
                   <td className="px-4 py-3">{studentCount}</td>
                 </tr>

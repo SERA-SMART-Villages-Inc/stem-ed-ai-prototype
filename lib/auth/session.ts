@@ -99,3 +99,17 @@ export async function requireRole(role: AppRole): Promise<Profile> {
   }
   return profile;
 }
+
+/**
+ * Same as requireRole, but returns the full session (profile + source) so
+ * callers can tell a real Supabase session from the dev-mock fallback and
+ * pick a data adapter accordingly (see lib/services/adapters/resolveAdapter).
+ */
+export async function requireRoleSession(role: AppRole): Promise<ResolvedSession> {
+  const session = await getCurrentProfile();
+  if (!session) redirect("/login");
+  if (session.profile.role !== role) {
+    redirect(ROLE_TO_DASHBOARD_PATH[session.profile.role]);
+  }
+  return session;
+}

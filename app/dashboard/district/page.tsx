@@ -1,5 +1,5 @@
-import { requireRole } from "@/lib/auth/session";
-import { getAdapter, DEFAULT_DATA_SOURCE, type MockDataSource } from "@/lib/services/adapters";
+import { requireRoleSession } from "@/lib/auth/session";
+import { resolveAdapter } from "@/lib/services/adapters";
 import { StatCard } from "@/components/dashboard/StatCard";
 import { redirect } from "next/navigation";
 
@@ -13,12 +13,12 @@ export default async function DistrictDashboardPage({
 }: {
   searchParams: { source?: string };
 }) {
-  const profile = await requireRole("district_admin");
+  const session = await requireRoleSession("district_admin");
+  const { profile } = session;
   const districtId = profile.district_id;
   if (!districtId) redirect("/login");
 
-  const source: MockDataSource = searchParams.source === "edfi" ? "edfi" : DEFAULT_DATA_SOURCE;
-  const adapter = getAdapter(source);
+  const adapter = await resolveAdapter(session, searchParams.source);
 
   const [district, schools] = await Promise.all([
     adapter.getDistrict(districtId),
@@ -57,7 +57,9 @@ export default async function DistrictDashboardPage({
       <div>
         <h1 className="text-xl font-semibold">{district?.name ?? "District"} — Overview</h1>
         <p className="text-sm text-muted-foreground">
-          Synthetic data · roster source: {source === "edfi" ? "Ed-Fi" : "OneRoster"}
+          {session.source === "supabase"
+            ? "Live Supabase database (RLS-enforced)"
+            : `Synthetic mock data · roster source: ${searchParams.source === "edfi" ? "Ed-Fi" : "OneRoster"}`}
         </p>
       </div>
 

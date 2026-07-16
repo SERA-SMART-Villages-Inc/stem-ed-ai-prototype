@@ -9,7 +9,9 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test:unit": "vitest run",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "seed": "tsx scripts/seed.ts",
+    "verify:rls": "tsx scripts/verify-rls.ts"
   },
   "dependencies": {
     "next": "14.2.35",
@@ -36,6 +38,8 @@
     "eslint-config-next": "14.2.35",
     "vitest": "3.2.7",
     "@playwright/test": "1.46.1",
-    "jsdom": "24.1.1"
+    "jsdom": "24.1.1",
+    "tsx": "4.19.1",
+    "dotenv": "16.4.5"
   }
 }

@@ -17,6 +17,8 @@ export interface StudentDataAdapter {
   getStudentById(studentId: string): Promise<Student | null>;
   getAssessmentsByStudent(studentId: string): Promise<Assessment[]>;
   getInterventionsByStudent(studentId: string): Promise<Intervention[]>;
+  /** Full name for any profile id (teacher, student, etc.) — not on the Teacher/Student types themselves, since those mirror SIS rows, not `profiles`. */
+  getFullName(profileId: string): Promise<string>;
 }
 
 /** Thrown by adapters when a caller requests data outside their RLS-permitted scope. */

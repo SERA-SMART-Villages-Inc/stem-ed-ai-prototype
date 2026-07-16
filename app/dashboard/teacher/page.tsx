@@ -1,29 +1,29 @@
-import { requireRole } from "@/lib/auth/session";
-import { getAdapter, DEFAULT_DATA_SOURCE, type MockDataSource } from "@/lib/services/adapters";
+import { requireRoleSession } from "@/lib/auth/session";
+import { resolveAdapter } from "@/lib/services/adapters";
 import { ProficiencyBadge, InterventionStatusBadge, FlagBadge } from "@/components/dashboard/badges";
 import { StatCard } from "@/components/dashboard/StatCard";
-import { lookupFullName } from "@/lib/services/profileDirectory";
 
 export default async function TeacherDashboardPage({
   searchParams,
 }: {
   searchParams: { source?: string };
 }) {
-  const profile = await requireRole("teacher");
-  const source: MockDataSource = searchParams.source === "edfi" ? "edfi" : DEFAULT_DATA_SOURCE;
-  const adapter = getAdapter(source);
+  const session = await requireRoleSession("teacher");
+  const { profile } = session;
+  const adapter = await resolveAdapter(session, searchParams.source);
 
   const students = await adapter.getStudentsByTeacher(profile.id);
 
   const rows = await Promise.all(
     students.map(async (student) => {
-      const [assessments, interventions] = await Promise.all([
+      const [fullName, assessments, interventions] = await Promise.all([
+        adapter.getFullName(student.id),
         adapter.getAssessmentsByStudent(student.id),
         adapter.getInterventionsByStudent(student.id),
       ]);
       const latest = [...assessments].sort((a, b) => (a.administered_at < b.administered_at ? 1 : -1))[0] ?? null;
       const activeInterventions = interventions.filter((iv) => iv.status === "active" || iv.status === "proposed");
-      return { student, latest, activeInterventions };
+      return { student, fullName, latest, activeInterventions };
     })
   );
 
@@ -32,7 +32,9 @@ export default async function TeacherDashboardPage({
       <div>
         <h1 className="text-xl font-semibold">My Students</h1>
         <p className="text-sm text-muted-foreground">
-          Synthetic data · roster source: {source === "edfi" ? "Ed-Fi" : "OneRoster"}
+          {session.source === "supabase"
+            ? "Live Supabase database (RLS-enforced)"
+            : `Synthetic mock data · roster source: ${searchParams.source === "edfi" ? "Ed-Fi" : "OneRoster"}`}
         </p>
       </div>
 
@@ -57,9 +59,9 @@ export default async function TeacherDashboardPage({
             </tr>
           </thead>
           <tbody>
-            {rows.map(({ student, latest, activeInterventions }) => (
+            {rows.map(({ student, fullName, latest, activeInterventions }) => (
               <tr key={student.id} className="border-t border-border align-top">
-                <td className="px-4 py-3 font-medium">{lookupFullName(student.id)}</td>
+                <td className="px-4 py-3 font-medium">{fullName}</td>
                 <td className="px-4 py-3">{student.grade_level === 0 ? "K" : student.grade_level}</td>
                 <td className="px-4 py-3">
                   <div className="flex flex-wrap gap-1">

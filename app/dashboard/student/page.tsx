@@ -1,5 +1,5 @@
-import { requireRole } from "@/lib/auth/session";
-import { getAdapter, DEFAULT_DATA_SOURCE, type MockDataSource } from "@/lib/services/adapters";
+import { requireRoleSession } from "@/lib/auth/session";
+import { resolveAdapter } from "@/lib/services/adapters";
 import { AssessmentTrendChart } from "@/components/dashboard/AssessmentTrendChart";
 import { InterventionStatusBadge } from "@/components/dashboard/badges";
 import type { InterventionType } from "@/types/schemas";
@@ -19,9 +19,9 @@ export default async function StudentDashboardPage({
 }: {
   searchParams: { source?: string };
 }) {
-  const profile = await requireRole("student");
-  const source: MockDataSource = searchParams.source === "edfi" ? "edfi" : DEFAULT_DATA_SOURCE;
-  const adapter = getAdapter(source);
+  const session = await requireRoleSession("student");
+  const { profile } = session;
+  const adapter = await resolveAdapter(session, searchParams.source);
 
   const [assessments, interventions] = await Promise.all([
     adapter.getAssessmentsByStudent(profile.id),
